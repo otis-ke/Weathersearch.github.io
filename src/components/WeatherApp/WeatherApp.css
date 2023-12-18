@@ -1,13 +1,13 @@
-.container{
+.container {
     width: 607px;
-    height: 829px;
+    height: 100vh;
     margin: auto;
     margin-top: 75px;
     border-radius: 12px;
     overflow: hidden;
-    background-image: linear-gradient(180deg, #2c3e50 0%, #354b5e 20%, #3c5772 40%, #4d6e88 60%, #5d849d 80%, #6d9bb2 100%);
-    height: 100vh; 
+    background-image: linear-gradient(180deg, #3498db 0%, #2980b9 20%, #2c3e50 40%, #1abc9c 60%, #16a085 80%, #27ae60 100%);
 }
+
 
 .top-bar{
     display: flex;
