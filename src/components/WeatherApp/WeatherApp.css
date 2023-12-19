@@ -125,7 +125,7 @@
   }
   
   .link a:hover {
-    text-decoration-thickness: rgb(197, 17, 17);
+    text-decoration-thickness: blue;
  }
 
   .link p{
@@ -145,8 +145,8 @@
 
 @media (max-width: 580px) {
     .container {
-        width: 500%;
-        height: 500px;
+        width: 100%;
+        height: auto;
         margin: 0;
         margin-top: 20px;
         border-radius: 8px;
