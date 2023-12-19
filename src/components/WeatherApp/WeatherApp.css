@@ -178,7 +178,7 @@
     }
 
     .weather-location {
-        font-size: 250px; 
+        font-size: 25px; 
     }
 
     .data-container {
@@ -190,11 +190,11 @@
     }
 
     .data {
-        font-size: 15px; 
+        font-size: 20px; 
     }
 
     .text {
-        font-size: 10px; 
+        font-size: 15px; 
     }
 
     .link p {
