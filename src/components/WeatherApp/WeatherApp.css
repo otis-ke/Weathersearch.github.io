@@ -10,7 +10,6 @@
     animation: gradientChange 5s infinite alternate; /* Added animation */
 }
 
-/* Gradient Animation Keyframes */
 @keyframes gradientChange {
     0% {
         background-position: 0% 50%;
@@ -146,7 +145,7 @@
 @media (max-width: 580px) {
     .container {
         width: 100%;
-        height: auto;
+        height: 650px;
         margin: 0;
         margin-top: 20px;
         border-radius: 8px;
