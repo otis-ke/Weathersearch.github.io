@@ -145,11 +145,11 @@
 
 @media (max-width: 580px) {
     .container {
-        width: 100%;
-        height: auto;
+        width: 500%;
+        height: 500px;
         margin: 0;
         margin-top: 20px;
-        border-radius: 0;
+        border-radius: 8px;
     }
 
     .top-bar {
