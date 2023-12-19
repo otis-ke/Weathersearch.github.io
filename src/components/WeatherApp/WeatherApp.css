@@ -1,13 +1,26 @@
-.container{
+/* Container Styles */
+.container {
     width: 607px;
-    height: 829px;
+    height: 100vh;
     margin: auto;
     margin-top: 75px;
     border-radius: 12px;
     overflow: hidden;
-    background-image: linear-gradient(180deg, #2c3e50 0%, #354b5e 20%, #3c5772 40%, #4d6e88 60%, #5d849d 80%, #6d9bb2 100%);
-
+    background-image: linear-gradient(180deg, #001f3f 0%, #003366 20%, #004080 40%, #00509e 60%, #0060bd 80%, #0070dc 100%);
+    animation: gradientChange 5s infinite alternate; /* Added animation */
 }
+
+/* Gradient Animation Keyframes */
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Other Styles... */
 
 .top-bar{
     display: flex;
@@ -52,7 +65,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 120px;
+    font-size: 80px;
     font-weight: 400;
 }
 
@@ -60,12 +73,12 @@
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 400;
 }
 
 .data-container{
-    margin-top: 50px;
+    margin-top: 40px;
     color: white;
     display: flex;
     justify-content: center;
@@ -128,4 +141,63 @@
     overflow: hidden; 
     white-space: nowrap; 
     text-overflow: ellipsis;
+}
+
+@media (max-width: 580px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+
+    .top-bar {
+        padding-top: 20px;
+    }
+
+    .top-bar input {
+        width: 100%;
+        max-width: 250px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .search-icon {
+        width: 40px; 
+        height: 40px; 
+    }
+
+    .weather-image img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .weather-temp {
+        font-size: 40px; 
+    }
+
+    .weather-location {
+        font-size: 250px; 
+    }
+
+    .data-container {
+        margin-top: 20px; 
+    }
+
+    .element {
+        gap: 8px;
+    }
+
+    .data {
+        font-size: 24px; 
+    }
+
+    .text {
+        font-size: 14px; 
+    }
+
+    .link p {
+        font-size: 12px; 
+    }
 }
