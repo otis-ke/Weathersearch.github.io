@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Weathersearch.github.io/static/css/main.76d278fb.css",
-    "main.js": "/Weathersearch.github.io/static/js/main.6dea4e11.js",
+    "main.css": "/Weathersearch.github.io/static/css/main.94d928ee.css",
+    "main.js": "/Weathersearch.github.io/static/js/main.1e71e0c1.js",
     "static/js/787.38f16daf.chunk.js": "/Weathersearch.github.io/static/js/787.38f16daf.chunk.js",
     "static/media/cloud.png": "/Weathersearch.github.io/static/media/cloud.20f353f873a9b27949a9.png",
     "index.html": "/Weathersearch.github.io/index.html",
-    "main.76d278fb.css.map": "/Weathersearch.github.io/static/css/main.76d278fb.css.map",
-    "main.6dea4e11.js.map": "/Weathersearch.github.io/static/js/main.6dea4e11.js.map",
+    "main.94d928ee.css.map": "/Weathersearch.github.io/static/css/main.94d928ee.css.map",
+    "main.1e71e0c1.js.map": "/Weathersearch.github.io/static/js/main.1e71e0c1.js.map",
     "787.38f16daf.chunk.js.map": "/Weathersearch.github.io/static/js/787.38f16daf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76d278fb.css",
-    "static/js/main.6dea4e11.js"
+    "static/css/main.94d928ee.css",
+    "static/js/main.1e71e0c1.js"
   ]
 }
