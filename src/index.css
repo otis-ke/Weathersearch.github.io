@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global Styles */
+.sky-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #001f3f, #003366, #190051);
+  overflow: hidden;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
+.star {
+  width: 2px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: star-animation 5s infinite linear;
+}
+
+.shooting-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shooting-star {
+  width: 2px;
+  height: 8px;
+  background-color: #ffffff;
+  position: absolute;
+  transform: rotate(45deg);
+  animation: shooting-star-animation 5s infinite linear;
+}
+
+@keyframes star-animation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+@keyframes shooting-star-animation {
+  0% {
+    transform: translateX(100vw) translateY(0) rotate(45deg);
+  }
+  100% {
+    transform: translateX(-20vw) translateY(100vh) rotate(45deg);
+  }
+}
+
+/* Moon Styles */
+.moon {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 80px; /* adjust size as needed */
+  height: 80px; /* adjust size as needed */
+}
+
+.moon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Overlay Styles */
+.overlay-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, #1de0c0, #1b5cd4, #245100);
+  border-radius: 8px; /* Slightly smaller border radius */
+  padding: 15px; /* Slightly smaller padding */
+  text-align: center;
+  max-width: 400px; /* Slightly smaller max width */
+  width: 90%; /* Take 90% of the width */
+  font-family: 'Roboto', sans-serif; /* Use Google Font 'Roboto' */
+}
+
+.error-text {
+  font-size: 20px; /* Slightly smaller font size */
+  line-height: 1.4; /* Adjusted line height */
+  color: #c3bdce; /* White text color */
+}
+
+.error-text strong {
+  font-weight: bold;
+}
+
+.contact-link {
+  color: #17c451; /* Green link color */
+  text-decoration: underline;
+}
+
+.contact-link:hover {
+  text-decoration: none;
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+  .overlay-container {
+    max-width: 80%;
+    margin: 5px; /* Reduce margin for smaller screens */
+  }
+
+  /* Astronaut Styles for Smaller Screens */
+  .astronaut {
+    top: 10%;
+    width: 40px; /* Adjust the size for smaller screens */
+  }
+
+  /* Sun Styles for Smaller Screens */
+  .sun {
+    display: block;
+    top: 15%; /* Adjust the position below the moon */
+    right: 5%;
+    width: 30px; /* Adjust the size for smaller screens */
+  }
+}
+
+

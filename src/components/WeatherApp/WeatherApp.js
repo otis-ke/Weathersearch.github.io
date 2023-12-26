@@ -62,8 +62,7 @@ const WeatherApp = () => {
             });
         } catch (error) {
             console.error("An error occurred:", error);
-            // You may want to add user-friendly error handling here
-            // For example, set an error state or display a notification
+            
         }
     };
 
@@ -98,7 +97,7 @@ const WeatherApp = () => {
                 </div>
             </div>
             <div className="link">
-        <p className='link-text'>Created by Vincent Otis <a href="https://otis-ke.github.io/otiswebsite.github.io/" target="_blank" rel="noopener noreferrer"> @otis ke</a></p>
+        <p className='link-text'>Created by Vincent Otis <a href="https://otis-ke.github.io/portfolio/" target="_blank" rel="noopener noreferrer"> @otis ke</a></p>
          
       </div>
         </div>
